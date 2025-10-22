@@ -1,5 +1,5 @@
 
-E-Commerce Price Monitor Pro
+E-Commerce Price Monitor Web Scraper - Complete Source Code
 
 A complete, ready-to-run web scraping system that automatically tracks prices across major e-commerce stores. Built with pure Node.js - no dependencies, no monthly fees, no complexity.
 
