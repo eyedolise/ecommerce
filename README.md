@@ -128,7 +128,7 @@ Agency White-Label License ($799)
 · 90-day premium support
 · 2-hour customization consult
 
-Purchase at: https://kofi.com/eyedolise
+Purchase at: https://ko-fi.com/eyedolise
 
 🔧 Technical Details
 
@@ -155,7 +155,7 @@ Purchase at: https://kofi.com/eyedolise
 
 Kerwin Peters (Eyedolise)
 
-· Website: https://kofi.com/eyedolise
+· Website: https://ko-fi.com/eyedolise
 · Email: kofiklubteam@gmail.com
 
 ---
