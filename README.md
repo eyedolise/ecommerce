@@ -22,7 +22,7 @@ https://img.shields.io/badge/Dependencies-0-brightgreen
 ecommerce-price-monitor/
 ├── scraper.js          # Main scraping engine (300+ lines)
 ├── websites.json       # Store configurations and selectors
-├── products.json       # 40+ real product examples
+├── products.json       # 10+ real product examples
 ├── package.json        # Project configuration
 └── README.md          # This file
 ```
