@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -491,7 +490,7 @@
             <!-- OVERVIEW SECTION -->
             <div class="section">
                 <h2>Overview</h2>
-                <p>The E-Commerce Price Monitor Web Scraper is an advanced, multi-platform price tracking tool designed for today's competitive e-commerce landscape. Built with pure Node.js and advanced scraping technology, it provides businesses, retailers, and shoppers with real-time competitive intelligence in an increasingly price-sensitive market.</p>
+                <p>The E-Commerce Price Monitor Web Scraper is a complete, multi-platform price tracking tool designed for today's competitive e-commerce landscape. Built with pure Node.js and advanced scraping technology, this powerful tool automatically tracks prices across major e-commerce platforms including Amazon, eBay, Walmart, and BestBuy. Users can monitor competitor pricing in real-time, receive instant alerts for price drops, and export comprehensive data for strategic analysis—all while maintaining respectful scraping practices with built-in rate limiting.</p>
             </div>
 
             <!-- CRITICAL USEFULNESS SECTION -->
@@ -611,26 +610,26 @@
                     <div class="benefit-card" style="border-left-color: #007bff;">
                         <h4>⚡ Pro Version</h4>
                         <p><strong>For Professionals & Small Businesses</strong></p>
-                        <p>Enhanced with web dashboard, email notifications, and better reliability. Ideal for freelancers and agencies.</p>
+                        <p>Enhanced with web dashboard and better reliability. Ideal for freelancers and agencies.</p>
                         <ul style="margin-top: 15px;">
                             <li>Web dashboard with charts</li>
-                            <li>Email/SMS notifications</li>
-                            <li>Puppeteer for JavaScript sites</li>
+                         
+                            <li>Job scheduling system</li>
                             <li>Proxy rotation support</li>
-                            <li>Scheduled scraping</li>
+                            <li>Enhanced error handling</li>
                         </ul>
                     </div>
                     
                     <div class="benefit-card" style="border-left-color: #dc3545;">
                         <h4>🚀 Agency Version</h4>
-                        <p><strong>For Enterprise & Resale</strong></p>
-                        <p>Distributed scraping, AI anti-bot bypass, and SaaS-ready architecture. Built for scale and resale.</p>
+                        <p><strong>For Agencies & Resellers</strong></p>
+                        <p>Complete white-label solution with distributed scraping and client management. Built for scale and resale.</p>
                         <ul style="margin-top: 15px;">
                             <li>Distributed scraping cluster</li>
-                            <li>AI anti-bot bypass</li>
-                            <li>Multi-tenant client management</li>
                             <li>White-label branding system</li>
-                            <li>Complete SaaS blueprint</li>
+                            <li>Client management system</li>
+                            <li>Advanced anti-detection</li>
+                            <li>Complete resale rights</li>
                         </ul>
                     </div>
                 </div>
@@ -653,27 +652,24 @@
                 
                 <h3>⚡ Pro Version Adds:</h3>
                 <div class="code-block" style="background: #2c3e50; color: white;">
-                    ✅ scraper-pro.js       - Enhanced scraper with Puppeteer<br>
+                    ✅ scraper-pro.js       - Enhanced scraper engine<br>
                     ✅ dashboard-server.js  - Web dashboard with charts<br>
                     ✅ scheduler.js         - Job scheduling system<br>
-                    ✅ notifications.js     - Email/SMS alerts<br>
-                    ✅ database.js          - SQLite database integration<br>
+            
                     ✅ Full web UI (HTML/CSS/JS)<br>
-                    ✅ Docker configuration<br>
-                    ✅ API server
+                    ✅ Advanced configuration<br>
+                    ✅ Setup & deployment scripts
                 </div>
                 
                 <h3>🚀 Agency Version Adds:</h3>
                 <div class="code-block" style="background: #2c3e50; color: white;">
-                    ✅ cluster/master.js    - Distributed scraping cluster<br>
-                    ✅ ai-detector.js       - AI anti-bot bypass<br>
-                    ✅ multi-tenant.js      - Client management system<br>
-                    ✅ billing-module.js    - Stripe integration<br>
-                    ✅ analytics-engine.js  - Price prediction AI<br>
-                    ✅ Kubernetes configurations<br>
-                    ✅ Monitoring stack (Grafana/Prometheus)<br>
-                    ✅ Complete API gateway<br>
-                    ✅ ALL previous files included
+                    ✅ cluster/master.js    - Distributed scraping system<br>
+                    ✅ cluster/worker.js    - Worker processes<br>
+                    ✅ client-manager.js    - Client management system<br>
+                    ✅ white-label.js       - White-label branding<br>
+                    ✅ All Pro version files included<br>
+                    ✅ Complete resale rights<br>
+                    ✅ Agency deployment guide
                 </div>
             </div>
 
@@ -734,23 +730,26 @@ npm run monitor
                 <h3>⚡ Pro Version Installation (Additional Steps):</h3>
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h4>Install Docker (Optional)</h4>
+                    <h4>Install Dependencies</h4>
                     <div class="code-block">
-# For containerized deployment<br>
-docker-compose up -d
+# Install all dependencies<br>
+npm install<br><br>
+# This includes:<br>
+# - Express for web dashboard<br>
+# - Nodemailer for email alerts<br>
+# - Cron for job scheduling<br>
+# - Chart.js for visualizations
                     </div>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h4>Configure Email/SMS Alerts</h4>
+                    <h4>Configure Email Alerts</h4>
                     <div class="code-block">
 # Edit .env file<br>
 EMAIL_SERVICE=gmail<br>
 EMAIL_USER=your-email@gmail.com<br>
-EMAIL_PASS=your-password<br>
-SMS_SERVICE=twilio<br>
-TWILIO_SID=your-sid
+EMAIL_PASS=your-app-password
                     </div>
                 </div>
                 
@@ -763,416 +762,64 @@ npm run full<br><br>
 # Or individually<br>
 npm run dashboard    # Web UI at http://localhost:3000<br>
 npm run scheduler    # Scheduled scraping<br>
-npm run api          # REST API at http://localhost:3001
+npm run scraper      # Manual scraping
                     </div>
                 </div>
                 
                 <h3>🚀 Agency Version Installation (Enterprise Setup):</h3>
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h4>Run Enterprise Setup Script</h4>
+                    <h4>Run Agency Setup Script</h4>
                     <div class="code-block">
-# Complete enterprise setup<br>
+# Complete agency setup<br>
 ./scripts/setup-agency.sh<br><br>
 # This will install:<br>
 # - All dependencies<br>
-# - AI models<br>
-# - Database systems<br>
-# - Monitoring stack
+# - Configure clustering<br>
+# - Setup client management<br>
+# - Configure white-label branding
                     </div>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h4>Deploy with Kubernetes</h4>
+                    <h4>Configure White-label Branding</h4>
                     <div class="code-block">
-# Deploy to Kubernetes cluster<br>
-kubectl apply -f docker/kubernetes/<br><br>
-# Or use Docker Swarm<br>
-docker stack deploy -c docker-compose.prod.yml scraper
+# Edit branding configuration<br>
+nano config/branding.json<br><br>
+{<br>
+  "companyName": "Your Agency",<br>
+  "logo": "/assets/your-logo.png",<br>
+  "primaryColor": "#007bff",<br>
+  "removePoweredBy": true<br>
+}
                     </div>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h4>Configure Multi-Tenancy</h4>
+                    <h4>Add Your First Client</h4>
                     <div class="code-block">
-# Add your first client<br>
+# Add client via CLI<br>
 npm run client:add<br><br>
-# Configure billing<br>
-npm run billing:setup<br><br>
-# Set up monitoring<br>
-npm run monitoring:setup
+# Follow prompts to:<br>
+# - Enter client details<br>
+# - Set subscription plan<br>
+# - Configure API access<br>
+# - Setup client dashboard
                     </div>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h4>Scale Your Cluster</h4>
+                    <h4>Start Agency Cluster</h4>
                     <div class="code-block">
-# Scale up workers based on demand<br>
-npm run scale:up -- --workers=10<br><br>
-# Or enable auto-scaling<br>
-npm run scale:auto
-                    </div>
-                </div>
-            </div>
-
-            <!-- WEB APP INTEGRATION DEMO -->
-            <div class="section">
-                <h2>🚀 Live Web App Integration Demo</h2>
-                <p>See exactly how our price monitor integrates into real web applications with working code examples.</p>
-
-                <div class="integration-demo">
-                    <h3>Price Comparison Integration</h3>
-                    <div class="demo-grid">
-                        <div class="demo-code">
-// Frontend React Component<br>
-function PriceComparison() {<br>
-  const [products, setProducts] = useState([]);<br>
-  <br>
-  const trackProduct = async (url) => {<br>
-    const response = await fetch('/api/prices/track', {<br>
-      method: 'POST',<br>
-      body: JSON.stringify({ url })<br>
-    });<br>
-    const data = await response.json();<br>
-    setProducts([...products, data.product]);<br>
-  };<br>
-  <br>
-  return (<br>
-    &lt;div&gt;<br>
-      &lt;ProductSearch onTrack={trackProduct} /&gt;<br>
-      &lt;PriceChart products={products} /&gt;<br>
-    &lt;/div&gt;<br>
-  );<br>
-}<br>
-<br>
-// Backend API Route<br>
-app.post('/api/prices/track', async (req, res) => {<br>
-  const product = await priceScraper.track(req.body.url);<br>
-  res.json({ product });<br>
-});
-                        </div>
-                        <div class="demo-preview">
-                            <h4>Live Preview: Price Comparison Dashboard</h4>
-                            <div style="background: #e9ecef; padding: 15px; border-radius: 5px; margin: 10px 0;">
-                                <strong>Tracking:</strong> Amazon Echo Dot (4th Gen)
-                            </div>
-                            <div style="background: #d4edda; padding: 10px; border-radius: 5px; margin: 5px 0;">
-                                ✅ Amazon: $49.99 (Lowest in 30 days)
-                            </div>
-                            <div style="background: #f8d7da; padding: 10px; border-radius: 5px; margin: 5px 0;">
-                                ⚠️ Walmart: $54.99 (2% above average)
-                            </div>
-                            <div style="background: #d4edda; padding: 10px; border-radius: 5px; margin: 5px 0;">
-                                ✅ BestBuy: $48.99 (Price drop detected!)
-                            </div>
-                            <div style="margin-top: 15px; font-size: 0.9rem; color: #666;">
-                                <strong>Last Updated:</strong> 5 minutes ago | <strong>Alerts:</strong> 2 price drops today
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="integration-demo">
-                    <h3>Competitor Monitoring Dashboard</h3>
-                    <div class="demo-grid">
-                        <div class="demo-code">
-// Real-time Competitor Dashboard<br>
-function CompetitorDashboard() {<br>
-  const [competitors, setCompetitors] = useState([]);<br>
-  <br>
-  useEffect(() => {<br>
-    // WebSocket for live price updates<br>
-    const ws = new WebSocket('ws://yourapp.com/price-updates');<br>
-    ws.onmessage = (event) => {<br>
-      const update = JSON.parse(event.data);<br>
-      updateCompetitor(update);<br>
-    };<br>
-    <br>
-    // Load initial competitor data<br>
-    loadCompetitors();<br>
-  }, []);<br>
-  <br>
-  const loadCompetitors = async () => {<br>
-    const data = await fetch('/api/competitors/monitor');<br>
-    setCompetitors(await data.json());<br>
-  };<br>
-  <br>
-  return (<br>
-    &lt;div className="dashboard"&gt;<br>
-      &lt;PriceChangeChart competitors={competitors} /&gt;<br>
-      &lt;StockLevelTracker competitors={competitors} /&gt;<br>
-      &lt;PriceAlertFeed alerts={competitors.alerts} /&gt;<br>
-    &lt;/div&gt;<br>
-  );<br>
-}
-                        </div>
-                        <div class="demo-preview">
-                            <h4>Live Preview: Competitor Intelligence Dashboard</h4>
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0;">
-                                <div style="background: #e3f2fd; padding: 10px; border-radius: 5px; text-align: center;">
-                                    <div style="font-size: 0.8rem;">PRICE CHANGES TODAY</div>
-                                    <div style="font-size: 1.2rem; font-weight: bold;">14</div>
-                                    <div style="font-size: 0.7rem; color: #f44336;">↑ 40% from yesterday</div>
-                                </div>
-                                <div style="background: #f3e5f5; padding: 10px; border-radius: 5px; text-align: center;">
-                                    <div style="font-size: 0.8rem;">OUT OF STOCK ITEMS</div>
-                                    <div style="font-size: 1.2rem; font-weight: bold;">8</div>
-                                    <div style="font-size: 0.7rem; color: #4caf50;">↓ 2 from last week</div>
-                                </div>
-                            </div>
-                            <div style="background: #fff3e0; padding: 10px; border-radius: 5px; margin: 10px 0;">
-                                <strong>🚨 ALERT:</strong> Competitor dropped price on "Wireless Earbuds" by 15%
-                            </div>
-                            <div style="font-size: 0.8rem; color: #666; margin-top: 10px;">
-                                <strong>Monitoring:</strong> 5 competitors, 42 products | <strong>Updates:</strong> Every 15 minutes
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ARCHITECTURE OVERVIEW -->
-            <div class="section">
-                <h2>🏗️ System Architecture</h2>
-                <p>Understand how our price monitor integrates seamlessly into your web application stack.</p>
-
-                <div class="architecture-diagram">
-                    <div class="diagram-box">Your E-commerce App</div>
-                    <div class="diagram-arrow">↓</div>
-                    <div class="diagram-box">REST API / GraphQL</div>
-                    <div class="diagram-arrow">↓</div>
-                    <div class="diagram-box" style="background: #27ae60;">Price Monitor API</div>
-                    <div class="diagram-arrow">↓</div>
-                    <div class="diagram-box">E-commerce Platforms<br>(Amazon, eBay, Walmart, etc.)</div>
-                    <div class="diagram-arrow" style="transform: rotate(180deg);">↓</div>
-                    <div class="diagram-box" style="background: #9b59b6;">Your Analytics Database</div>
-                </div>
-
-                <div class="feature-showcase">
-                    <div class="feature-card">
-                        <h4>🔌 REST API Integration</h4>
-                        <p>Standard HTTP endpoints that work with any frontend framework - React, Vue, Angular, or vanilla JS</p>
-                    </div>
-                    <div class="feature-card">
-                        <h4>📡 WebSocket Support</h4>
-                        <p>Real-time price updates for live dashboards and instant notifications</p>
-                    </div>
-                    <div class="feature-card">
-                        <h4>🔄 Background Jobs</h4>
-                        <p>Scheduled price monitoring that runs automatically and updates your database</p>
-                    </div>
-                    <div class="feature-card">
-                        <h4>🔐 Authentication Ready</h4>
-                        <p>JWT, OAuth, and API key support for secure multi-tenant applications</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DEVELOPER INTEGRATION SECTION -->
-            <div class="section">
-                <h2>🚀 Developer Integration Potential</h2>
-                <p style="font-size: 1.1rem; margin-bottom: 25px;">Transform our price monitoring engine into your competitive advantage with seamless API integration and modular architecture.</p>
-                
-                <h3>API-First Architecture</h3>
-                <div class="integration-example">
-                    // Simple integration example<br>
-                    const priceMonitor = require('ecommerce-price-monitor');<br><br>
-                    
-                    // Monitor product prices across platforms<br>
-                    const priceData = await priceMonitor.trackProduct({<br>
-                    &nbsp;&nbsp;sku: 'B08N5WRWNW',<br>
-                    &nbsp;&nbsp;platforms: ['amazon', 'walmart', 'bestbuy'],<br>
-                    &nbsp;&nbsp;interval: 'hourly',<br>
-                    &nbsp;&nbsp;alerts: { priceDrop: 10 } // Alert on 10%+ price drops<br>
-                    });
-                </div>
-                
-                <div class="integration-grid">
-                    <div class="integration-card">
-                        <h4>🏪 E-commerce Platforms</h4>
-                        <div class="use-case">
-                            <strong>USE CASE:</strong> "Build dynamic pricing like Amazon"
-                        </div>
-                        <ul>
-                            <li>Automated competitor price tracking</li>
-                            <li>Dynamic pricing algorithm development</li>
-                            <li>Price optimization across product categories</li>
-                            <li>Margin protection and optimization</li>
-                            <li>Seasonal pricing strategy implementation</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="integration-card">
-                        <h4>📈 Price Comparison Sites</h4>
-                        <div class="use-case">
-                            <strong>USE CASE:</strong> "Create the next Honey or Keepa"
-                        </div>
-                        <ul>
-                            <li>Real-time price comparison across retailers</li>
-                            <li>Price history charts and trend analysis</li>
-                            <li>Price drop alerts and notifications</li>
-                            <li>Deal detection and aggregation</li>
-                            <li>User price watching and tracking</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="integration-card">
-                        <h4>🤖 Dropshipping Automation</h4>
-                        <div class="use-case">
-                            <strong>USE CASE:</strong> "Automate your Shopify dropshipping"
-                        </div>
-                        <ul>
-                            <li>Supplier price monitoring automation</li>
-                            <li>Automatic price adjustment scripts</li>
-                            <li>Stock availability tracking</li>
-                            <li>Margin calculation and optimization</li>
-                            <li>Competitor pricing strategy analysis</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="integration-card">
-                        <h4>🏬 Retail Analytics</h4>
-                        <div class="use-case">
-                            <strong>USE CASE:</strong> "Enterprise retail intelligence"
-                        </div>
-                        <ul>
-                            <li>Market positioning analysis</li>
-                            <li>Competitive pricing intelligence</li>
-                            <li>Price elasticity modeling</li>
-                            <li>Promotional effectiveness tracking</li>
-                            <li>SKU-level price optimization</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="integration-card">
-                        <h4>💰 Investment & Reselling</h4>
-                        <div class="use-case">
-                            <strong>USE CASE:</strong> "Automated arbitrage detection"
-                        </div>
-                        <ul>
-                            <li>Price arbitrage opportunity identification</li>
-                            <li>Limited edition product tracking</li>
-                            <li>Flash sale and deal detection</li>
-                            <li>Market trend analysis for resale</li>
-                            <li>Profit margin calculation automation</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="integration-card">
-                        <h4>📊 Market Research</h4>
-                        <div class="use-case">
-                            <strong>USE CASE:</strong> "Professional market intelligence"
-                        </div>
-                        <ul>
-                            <li>Category pricing trend analysis</li>
-                            <li>Competitor strategy reverse engineering</li>
-                            <li>Market entry price positioning</li>
-                            <li>Product lifecycle price tracking</li>
-                            <li>Regional price variation analysis</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- COMPLETE INTEGRATION EXAMPLES -->
-            <div class="section">
-                <h2>💼 Complete Integration Scenarios</h2>
-
-                <div class="integration-demo">
-                    <h3>1. E-commerce Platform Integration</h3>
-                    <div class="demo-code">
-// Dynamic Pricing Engine<br>
-app.post('/api/products/:id/pricing', async (req, res) => {<br>
-  const product = await Product.findById(req.params.id);<br>
-  <br>
-  // Get competitor prices<br>
-  const competitorPrices = await priceScraper.getCompetitorPrices({<br>
-    productName: product.name,<br>
-    category: product.category,<br>
-    brands: [product.brand]<br>
-  });<br>
-  <br>
-  // Calculate optimal price<br>
-  const optimalPrice = calculateOptimalPrice({<br>
-    cost: product.cost,<br>
-    competitorPrices,<br>
-    desiredMargin: 0.30,<br>
-    marketPosition: product.positioning<br>
-  });<br>
-  <br>
-  // Update product price if needed<br>
-  if (Math.abs(product.price - optimalPrice) > product.price * 0.05) {<br>
-    product.price = optimalPrice;<br>
-    await product.save();<br>
-    await logPriceChange(product, optimalPrice);<br>
-  }<br>
-  <br>
-  res.json({ optimalPrice, competitorPrices });<br>
-});
-                    </div>
-                </div>
-
-                <div class="integration-demo">
-                    <h3>2. Price Alert System</h3>
-                    <div class="demo-code">
-// User Price Alert System<br>
-app.post('/api/alerts/create', async (req, res) => {<br>
-  const { userId, productUrl, targetPrice } = req.body;<br>
-  <br>
-  // Start tracking product<br>
-  const trackingId = await priceScraper.startTracking({<br>
-    url: productUrl,<br>
-    interval: 'hourly',<br>
-    callbackUrl: `https://yourapp.com/webhooks/price-alerts/${userId}`<br>
-  });<br>
-  <br>
-  // Create alert in database<br>
-  const alert = await Alert.create({<br>
-    userId,<br>
-    trackingId,<br>
-    productUrl,<br>
-    targetPrice,<br>
-    status: 'active'<br>
-  });<br>
-  <br>
-  // Send confirmation<br>
-  await sendAlertConfirmation(userId, alert);<br>
-  <br>
-  res.json({ alertId: alert.id, trackingId });<br>
-});
-                    </div>
-                </div>
-
-                <div class="integration-demo">
-                    <h3>3. Mobile Shopping Assistant</h3>
-                    <div class="demo-code">
-// Mobile App Price Comparison<br>
-app.get('/api/mobile/products/compare', async (req, res) => {<br>
-  const { barcode, location } = req.query;<br>
-  <br>
-  // Identify product from barcode<br>
-  const product = await identifyProduct(barcode);<br>
-  <br>
-  // Get prices from nearby retailers<br>
-  const prices = await priceScraper.searchProduct({<br>
-    name: product.name,<br>
-    location,<br>
-    radius: 10, // 10 mile radius<br>
-    retailers: ['walmart', 'target', 'bestbuy', 'amazon']<br>
-  });<br>
-  <br>
-  // Sort by price + proximity<br>
-  const results = prices.sort((a, b) => {<br>
-    const priceDiff = a.price - b.price;<br>
-    const distanceDiff = a.distance - b.distance;<br>
-    return priceDiff * 0.7 + distanceDiff * 0.3;<br>
-  });<br>
-  <br>
-  res.json({ product, prices: results.slice(0, 5) });<br>
-});
+# Start distributed cluster<br>
+npm run start:cluster -- --workers=4<br><br>
+# Or use Docker<br>
+docker-compose up -d<br><br>
+# Access admin panel<br>
+# http://localhost:3000/admin
                     </div>
                 </div>
             </div>
@@ -1234,7 +881,7 @@ app.get('/api/mobile/products/compare', async (req, res) => {<br>
                 <div class="benefit-grid">
                     <div class="benefit-card">
                         <h4>🚀 Speed to Market</h4>
-                        <p>Deploy price monitoring features in days instead of months. Our API handles the complex scraping infrastructure so you can focus on your core application.</p>
+                        <p>Deploy price monitoring features in days instead of months. Our code handles the complex scraping infrastructure so you can focus on your core application.</p>
                     </div>
                     
                     <div class="benefit-card">
@@ -1244,17 +891,17 @@ app.get('/api/mobile/products/compare', async (req, res) => {<br>
                     
                     <div class="benefit-card">
                         <h4>🔧 Reduced Technical Debt</h4>
-                        <p>No need to maintain scraping infrastructure, handle anti-bot measures, or update selectors when websites change. We handle the technical complexity.</p>
+                        <p>No need to maintain scraping infrastructure or handle anti-bot measures. We handle the technical complexity.</p>
                     </div>
                     
                     <div class="benefit-card">
                         <h4>📈 Scalable Infrastructure</h4>
-                        <p>From monitoring 10 products to 10,000 products. From single-user applications to enterprise platforms with multiple clients.</p>
+                        <p>From monitoring 10 products to 10,000 products. From single-user applications to agency platforms with multiple clients.</p>
                     </div>
                     
                     <div class="benefit-card">
                         <h4>🛡️ Compliance & Risk Management</h4>
-                        <p>Built-in rate limiting, TOS compliance, and ethical scraping practices. Reduce legal exposure while maintaining data access.</p>
+                        <p>Built-in rate limiting and respectful scraping practices. Reduce legal exposure while maintaining data access.</p>
                     </div>
                     
                     <div class="benefit-card">
@@ -1299,18 +946,16 @@ app.get('/api/mobile/products/compare', async (req, res) => {<br>
                         <div class="price">$299</div>
                         <ul class="features-list">
                             <li><strong>Complete Pro Version + ALL Basic Files</strong></li>
-                            <li>✅ scraper-pro.js - Enhanced scraper with Puppeteer</li>
+                            <li>✅ scraper-pro.js - Enhanced scraper engine</li>
                             <li>✅ dashboard-server.js - Web dashboard with charts</li>
                             <li>✅ scheduler.js - Job scheduling system</li>
-                            <li>✅ notifications.js - Email/SMS alerts</li>
-                            <li>✅ database.js - SQLite integration</li>
+                       
                             <li>✅ Full web UI (HTML/CSS/JS)</li>
                             <li>COMMERCIAL LICENSE</li>
                             <li>Use for client projects</li>
                             <li>60-day priority support</li>
                             <li>All 3 platforms + extensible architecture</li>
-                            <li>Docker support included</li>
-                            <li>API server ready</li>
+                            <li>Advanced configuration options</li>
                             <li class="cross">Resell source code</li>
                         </ul>
                         <a href="https://ko-fi.com/s/dcb5d135e2" class="cta-button" target="_blank">Get Pro License</a>
@@ -1319,24 +964,21 @@ app.get('/api/mobile/products/compare', async (req, res) => {<br>
                     <!-- Agency Tier -->
                     <div class="tier agency">
                         <h4>Agency White-Label</h4>
-                        <p><strong>For Agencies & Enterprise</strong></p>
+                        <p><strong>For Agencies & Resellers</strong></p>
                         <div class="price">$799</div>
                         <ul class="features-list">
                             <li><strong>Complete Agency Version + ALL Pro & Basic Files</strong></li>
-                            <li>✅ cluster/master.js - Distributed scraping cluster</li>
-                            <li>✅ ai-detector.js - AI anti-bot bypass</li>
-                            <li>✅ multi-tenant.js - Client management system</li>
-                            <li>✅ billing-module.js - Stripe integration</li>
-                            <li>✅ analytics-engine.js - Price prediction AI</li>
-                            <li>✅ Kubernetes configurations</li>
-                            <li>✅ Monitoring stack (Grafana/Prometheus)</li>
+                            <li>✅ cluster/master.js - Distributed scraping system</li>
+                            <li>✅ cluster/worker.js - Worker processes</li>
+                            <li>✅ client-manager.js - Client management system</li>
+                            <li>✅ white-label.js - White-label branding</li>
+                            <li>✅ Complete resale rights</li>
                             <li>WHITE-LABEL LICENSE</li>
                             <li>Resell rights included</li>
                             <li>90-day premium support</li>
                             <li>Remove all branding</li>
                             <li>Sell as your own product</li>
                             <li>Priority feature requests</li>
-                            <li>SaaS business blueprint</li>
                         </ul>
                         <a href="https://ko-fi.com/s/9bf9c147be" class="cta-button" target="_blank">Get Agency License</a>
                     </div>
@@ -1350,10 +992,10 @@ app.get('/api/mobile/products/compare', async (req, res) => {<br>
                             <strong>Basic:</strong> 5+ files, 300+ lines of code
                         </div>
                         <div style="background: white; padding: 15px 25px; border-radius: 8px; border: 2px solid #007bff;">
-                            <strong>Pro:</strong> 12+ files, 1,500+ lines of code
+                            <strong>Pro:</strong> 8+ files, 1,000+ lines of code
                         </div>
                         <div style="background: white; padding: 15px 25px; border-radius: 8px; border: 2px solid #dc3545;">
-                            <strong>Agency:</strong> 30+ files, 5,000+ lines of code
+                            <strong>Agency:</strong> 12+ files, 2,000+ lines of code
                         </div>
                     </div>
                 </div>
@@ -1366,33 +1008,33 @@ app.get('/api/mobile/products/compare', async (req, res) => {<br>
                 <h3>Advanced Architecture Features</h3>
                 <div class="tech-feature-grid">
                     <div class="tech-feature">
-                        <h4>🤖 AI Price Prediction</h4>
-                        <p>Machine learning algorithms for price trend forecasting</p>
+                        <h4>🔄 Rate Limiting</h4>
+                        <p>Intelligent delays between requests to avoid blocking</p>
                     </div>
                     <div class="tech-feature">
-                        <h4>🛡️ Anti-Detection</h4>
-                        <p>Advanced techniques to avoid blocking and CAPTCHAs</p>
+                        <h4>🛡️ Error Handling</h4>
+                        <p>Robust error handling with automatic retry logic</p>
                     </div>
                     <div class="tech-feature">
                         <h4>⚡ Parallel Processing</h4>
                         <p>Multi-threaded scraping for speed and efficiency</p>
                     </div>
                     <div class="tech-feature">
-                        <h4>📊 Real-time Analytics</h4>
-                        <p>Live dashboards and instant price change detection</p>
+                        <h4>📊 Data Export</h4>
+                        <p>Multiple export formats including CSV and JSON</p>
                     </div>
                 </div>
                 
                 <h3>Reliability Engineering</h3>
                 <div class="benefit-grid">
                     <div class="benefit-card">
-                        <h4>99.5% Uptime Guarantee</h4>
-                        <p>Enterprise-grade reliability with SLA-backed performance guarantees and 24/7 monitoring.</p>
+                        <h4>Proven Architecture</h4>
+                        <p>Tested and optimized scraping engine that works reliably across all major e-commerce platforms.</p>
                     </div>
                     
                     <div class="benefit-card">
-                        <h4>Automatic Failover</h4>
-                        <p>Seamless switching between data sources when primary sources are unavailable or rate-limited.</p>
+                        <h4>Automatic Recovery</h4>
+                        <p>Seamless recovery when data sources are temporarily unavailable with intelligent retry mechanisms.</p>
                     </div>
                     
                     <div class="benefit-card">
@@ -1401,8 +1043,8 @@ app.get('/api/mobile/products/compare', async (req, res) => {<br>
                     </div>
                     
                     <div class="benefit-card">
-                        <h4>Intelligent Retry Mechanisms</h4>
-                        <p>Smart retry logic with pattern recognition to avoid detection while ensuring data completeness.</p>
+                        <h4>Data Validation</h4>
+                        <p>Smart validation logic to ensure data completeness and accuracy across all scraping operations.</p>
                     </div>
                 </div>
                 
@@ -1410,10 +1052,10 @@ app.get('/api/mobile/products/compare', async (req, res) => {<br>
                 <div class="use-case">
                     <ul>
                         <li><strong>Respectful Scraping Intervals:</strong> Configurable delays between requests to avoid overwhelming target servers</li>
-                        <li><strong>robots.txt Compliance:</strong> Automatic respect for website scraping policies</li>
+                        <li><strong>robots.txt Compliance:</strong> Framework for respecting website scraping policies</li>
                         <li><strong>Data Usage Guidelines:</strong> Clear ethical framework for data utilization</li>
-                        <li><strong>Privacy Protection:</strong> Protocols for handling personal and sensitive information</li>
-                        <li><strong>Legal Compliance:</strong> Framework designed to respect copyright and terms of service</li>
+                        <li><strong>Privacy Protection:</strong> Protocols for handling product information</li>
+                        <li><strong>Legal Compliance:</strong> Framework designed to respect terms of service</li>
                     </ul>
                 </div>
             </div>
@@ -1450,13 +1092,11 @@ app.get('/api/mobile/products/compare', async (req, res) => {<br>
 
 <a href='https://www.saashub.com/eyedolise-ecommerce-price-monitor?utm_source=badge&utm_campaign=badge&utm_content=eyedolise-ecommerce-price-monitor&badge_variant=color&badge_kind=approved' target='_blank'><img src="https://cdn-b.saashub.com/img/badges/approved-color.png?v=1" alt="Eyedolise Ecommerce Price Monitor badge" style="max-width: 150px;"/></a>
 
-
             </div>
 
             <p style="margin-top: 20px; opacity: 0.8;">&copy; 2025 Kerwin Peters (Eyedolise). All rights reserved.</p>
         </footer>
     </div>
-
 
 <!-- Default Statcounter code -->
 <script type="text/javascript">
