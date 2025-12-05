@@ -803,5 +803,7 @@ The author is not responsible for any misuse or legal issues arising from the us
 
 Get Started · View Demos · Buy License
 
+
+Built by Kerwin Peters (Eyedolise)
 </div>
 ```
