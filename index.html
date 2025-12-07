@@ -673,40 +673,43 @@
                 </div>
             </div>
 
-            <!-- INSTALLATION DEMO -->
-            <div class="section">
-                <h2>🚀 Installation & Getting Started</h2>
-                <p style="text-align: center; margin-bottom: 30px; font-size: 1.1rem;">
-                    Get your price monitor running in just 5 minutes with these simple steps for each tier.
-                </p>
-                
-                <h3>🎯 Basic Version Installation (2 Minutes):</h3>
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h4>Download & Extract Files</h4>
-                    <div class="code-block">
-# Download and extract the package<br>
-unzip ecommerce-scraper-basic.zip<br>
-cd ecommerce-scraper-basic
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h4>Run Setup Script</h4>
-                    <div class="code-block">
+        <!-- INSTALLATION DEMO -->
+<div class="section">
+    <h2>🚀 Installation & Getting Started</h2>
+    <p style="text-align: center; margin-bottom: 30px; font-size: 1.1rem;">
+        Get your price monitor running in just 5 minutes with these simple steps for each tier.
+    </p>
+    
+    <h3>🎯 Basic Version Installation (2 Minutes):</h3>
+    <div class="step">
+        <div class="step-number">1</div>
+        <h4>Download Files</h4>
+        <div class="code-block">
+# Get all the Basic Version files<br>
+scraper.js<br>
+websites.json<br>
+products.json<br>
+package.json<br>
+setup.sh / setup.bat
+        </div>
+    </div>
+    
+    <div class="step">
+        <div class="step-number">2</div>
+        <h4>Run Setup Script</h4>
+        <div class="code-block">
 # Windows<br>
 setup.bat<br><br>
 # Mac/Linux<br>
 chmod +x setup.sh<br>
 ./setup.sh
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h4>Configure Products</h4>
-                    <div class="code-block">
+        </div>
+    </div>
+    
+    <div class="step">
+        <div class="step-number">3</div>
+        <h4>Configure Products</h4>
+        <div class="code-block">
 # Edit products.json with your target products<br>
 {<br>
   "name": "Amazon Echo Dot",<br>
@@ -714,18 +717,18 @@ chmod +x setup.sh<br>
   "targetPrice": 25,<br>
   "category": "electronics"<br>
 }
-                    </div>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h4>Start Monitoring</h4>
-                    <div class="code-block">
-npm start<br><br>
-# Or for continuous monitoring<br>
-npm run monitor
-                    </div>
-                </div>
+        </div>
+    </div>
+    
+    <div class="step">
+        <div class="step-number">4</div>
+        <h4>Start Monitoring</h4>
+        <div class="code-block">
+node scraper.js
+        </div>
+    </div>
+    
+  
                 
                 <h3>⚡ Pro Version Installation (Additional Steps):</h3>
                 <div class="step">
