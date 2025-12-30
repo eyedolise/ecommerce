@@ -369,8 +369,6 @@
 </script>
 
 
-  
-
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -560,38 +558,6 @@
             margin-bottom: 1rem;
         }
         
-        /* Profit Calculator */
-        .profit-calculator {
-            background: linear-gradient(135deg, #065f46 0%, #047857 100%);
-            color: white;
-            padding: 3rem;
-            border-radius: 12px;
-            margin: 3rem 0;
-        }
-        
-        .calc-step {
-            display: flex;
-            align-items: center;
-            margin: 1.5rem 0;
-            padding: 1.5rem;
-            background: rgba(255,255,255,0.1);
-            border-radius: 8px;
-        }
-        
-        .calc-number {
-            background: white;
-            color: var(--secondary);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin-right: 1.5rem;
-            flex-shrink: 0;
-        }
-        
         /* Use Cases */
         .use-case-grid {
             display: grid;
@@ -681,7 +647,7 @@
             background: rgba(255,255,255,0.05);
         }
         
-        /* Pricing Grid - Keeping Your Original */
+        /* Pricing Grid */
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -734,6 +700,13 @@
             margin: 10px 0;
         }
         
+    .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-light);
+        }
+
         .features {
             list-style-type: none;
             margin: 1rem 0;
@@ -750,63 +723,6 @@
             color: var(--success);
             position: absolute;
             left: 0;
-        }
-        
-        /* Testimonial Cards */
-        .testimonial-card {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 10px;
-            margin: 1.5rem 0;
-            border-left: 4px solid var(--accent);
-        }
-        
-        .testimonial-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        
-        .testimonial-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 1rem;
-            color: white;
-            font-weight: bold;
-        }
-        
-        .testimonial-stars {
-            display: flex;
-            color: #fbbf24;
-            margin-top: 0.5rem;
-        }
-        
-        /* Social Proof Stats */
-        .social-proof-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-            text-align: center;
-        }
-        
-        .stat-box {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 10px;
-        }
-        
-        .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--primary);
-            display: block;
-            margin-bottom: 0.5rem;
         }
         
         /* Responsive */
@@ -827,16 +743,16 @@
                 padding: 2rem;
             }
             
-            .platform-grid, .use-case-grid, .alert-grid, .pricing-grid, .social-proof-stats {
+            .platform-grid, .use-case-grid, .alert-grid, .pricing-grid {
                 grid-template-columns: 1fr;
             }
             
-            .workflow-step, .calc-step {
+            .workflow-step {
                 flex-direction: column;
                 text-align: center;
             }
             
-            .step-icon, .calc-number {
+            .step-icon {
                 margin-right: 0;
                 margin-bottom: 1rem;
             }
@@ -881,14 +797,11 @@
             <div class="logo">
                 <i class="fas fa-chart-line"></i>
             </div>
-            <h1>Stop Losing Money to Competitors<br><span style="font-size: 2.5rem;">Automated Price Tracking That Protects Your Margins</span></h1>
-            <p class="tagline">Monitor Amazon, eBay, Walmart, and every major retailer 24/7. Get instant alerts when prices drop or competitors change strategies.</p>
+            <h1>Automated Price Tracking for E-commerce<br><span style="font-size: 2.5rem;">Monitor Competitor Prices 24/7</span></h1>
+            <p class="tagline">Track Amazon, eBay, Walmart, and other retailers. Get alerts when prices drop or competitors change strategies.</p>
             <a href="#pricing" class="btn btn-accent btn-large">
                 <i class="fas fa-bolt"></i> Start Tracking Prices Now
             </a>
-            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">
-                Used by 312+ e-commerce stores, dropshippers, and retailers • 4.8/5 average rating
-            </p>
         </div>
     </header>
 
@@ -896,9 +809,9 @@
         <!-- THE PROBLEM -->
         <section>
             <div class="section-content">
-                <h2 class="text-center">The Price Blindness Problem</h2>
+                <h2 class="text-center">Manual Price Checking vs Automated Tracking</h2>
                 <p class="text-center" style="font-size: 1.2rem; margin-bottom: 2rem;">
-                    How businesses lose thousands every month by not tracking competitor prices:
+                    Compare different approaches to price monitoring:
                 </p>
                 
                 <div class="comparison-table">
@@ -906,44 +819,38 @@
                         <thead>
                             <tr>
                                 <th></th>
-                                <th style="background: #ef4444;">Manual Price Checking</th>
+                                <th style="background: #ef4444;">Manual Checking</th>
                                 <th style="background: var(--success);">PriceSpy Pro</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><strong>Time Investment</strong></td>
-                                <td>✅ 2-4 hours daily checking sites</td>
-                                <td>✅ <strong>5 minutes setup</strong>, then fully automated</td>
+                                <td>Hours daily checking sites</td>
+                                <td><strong>5 minutes setup</strong>, then automated</td>
                             </tr>
                             <tr>
                                 <td><strong>Price Drop Detection</strong></td>
-                                <td>❌ Discover days or weeks later</td>
-                                <td>✅ <strong>Within 15 minutes</strong> of change</td>
+                                <td>Discover days later</td>
+                                <td><strong>Within minutes</strong> of change</td>
                             </tr>
                             <tr>
-                                <td><strong>Competitor Moves</strong></td>
-                                <td>❌ Miss flash sales and promotions</td>
-                                <td>✅ <strong>Real-time tracking</strong> of all competitors</td>
+                                <td><strong>Competitor Tracking</strong></td>
+                                <td>Limited to few competitors</td>
+                                <td><strong>Unlimited competitors</strong> tracked</td>
                             </tr>
                             <tr>
                                 <td><strong>Market Intelligence</strong></td>
-                                <td>❌ Guesswork and assumptions</td>
-                                <td>✅ <strong>Data-driven decisions</strong> with historical trends</td>
+                                <td>Guesswork and assumptions</td>
+                                <td><strong>Data-driven decisions</strong> with trends</td>
                             </tr>
                             <tr>
-                                <td><strong>Margin Protection</strong></td>
-                                <td>❌ Lose sales to lower-priced competitors</td>
-                                <td>✅ <strong>Automatic alerts</strong> when you're undercut</td>
+                                <td><strong>Alert System</strong></td>
+                                <td>Manual checking required</td>
+                                <td><strong>Automatic alerts</strong> sent to you</td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                
-                <div class="text-center mt-3">
-                    <p style="font-size: 1.3rem; font-weight: bold;">
-                        Businesses using PriceSpy Pro increase margins by <span class="highlight">8-15%</span> within the first quarter
-                    </p>
                 </div>
             </div>
         </section>
@@ -962,7 +869,7 @@
                             <i class="fab fa-amazon"></i>
                         </div>
                         <h4>Amazon</h4>
-                        <p>Track all sellers, prices, and availability</p>
+                        <p>Track prices and seller changes</p>
                     </div>
                     
                     <div class="platform-card">
@@ -970,7 +877,7 @@
                             <i class="fab fa-ebay"></i>
                         </div>
                         <h4>eBay</h4>
-                        <p>Monitor auctions and buy-it-now prices</p>
+                        <p>Monitor auctions and fixed prices</p>
                     </div>
                     
                     <div class="platform-card">
@@ -978,7 +885,7 @@
                             <i class="fas fa-shopping-cart"></i>
                         </div>
                         <h4>Walmart</h4>
-                        <p>Track in-store and online pricing</p>
+                        <p>Track online pricing changes</p>
                     </div>
                     
                     <div class="platform-card">
@@ -1014,104 +921,6 @@
             </div>
         </section>
 
-        <!-- SOCIAL PROOF SECTION -->
-        <section>
-            <div class="section-content">
-                <h2 class="text-center">Trusted by E-commerce Businesses Worldwide</h2>
-                <p class="text-center mb-4" style="font-size: 1.2rem;">
-                    Here's what real business owners say about automating their price monitoring:
-                </p>
-                
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">JS</div>
-                        <div>
-                            <h4 style="margin: 0;">Jamie S.</h4>
-                            <p style="margin: 0; opacity: 0.8; font-size: 0.9rem;">Amazon FBA Seller • Electronics Niche</p>
-                        </div>
-                    </div>
-                    <p style="font-style: italic; font-size: 1.1rem; line-height: 1.7;">
-                        "I was getting undercut daily by competitors who'd drop prices overnight. Now I get SMS alerts at 3 AM when it happens. 
-                        Last month, I caught a competitor's flash sale and matched it within 15 minutes - sold 47 units I would have lost otherwise. 
-                        This paid for itself 12 times over in the first 60 days."
-                    </p>
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <span style="font-size: 0.9rem; opacity: 0.8;">Verified Purchase • 4 months ago</span>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card" style="border-left-color: var(--secondary);">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, var(--secondary), var(--primary));">MP</div>
-                        <div>
-                            <h4 style="margin: 0;">Marcus P.</h4>
-                            <p style="margin: 0; opacity: 0.8; font-size: 0.9rem;">Dropshipping Agency • 300+ Products</p>
-                        </div>
-                    </div>
-                    <p style="font-style: italic; font-size: 1.1rem; line-height: 1.7;">
-                        "Managing supplier prices across 6 different platforms was impossible manually. With this system, I caught a 22% price drop 
-                        on our top-selling product from a supplier. We adjusted all our listings immediately and increased our margin from 15% to 37% 
-                        on that item. The Pro version paid for itself in 48 hours."
-                    </p>
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <span style="font-size: 0.9rem; opacity: 0.8;">Verified Purchase • 6 months ago</span>
-                </div>
-     
-                
-                <!-- Social Proof Stats -->
-                <div class="social-proof-stats">
-                    <div class="stat-box">
-                        <span class="stat-number">312+</span>
-                        <h4>Active Businesses</h4>
-                        <p>Using PriceSpy daily</p>
-                    </div>
-                    
-                    <div class="stat-box">
-                        <span class="stat-number" style="color: var(--accent);">$2.1M+</span>
-                        <h4>Margins Protected</h4>
-                        <p>Total value saved</p>
-                    </div>
-                    
-                    <div class="stat-box">
-                        <span class="stat-number" style="color: var(--primary);">47,200+</span>
-                        <h4>Price Drops</h4>
-                        <p>Detected monthly</p>
-                    </div>
-                    
-                    <div class="stat-box">
-                        <span class="stat-number" style="color: #fbbf24;">4.8/5</span>
-                        <h4>Average Rating</h4>
-                        <p>From verified users</p>
-                    </div>
-                </div>
-                
-                <!-- Industry Trust Badges -->
-                <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.05); border-radius: 10px;">
-                    <h4 style="margin-bottom: 1.5rem; color: var(--text-light);">Trusted Across Industries</h4>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; opacity: 0.9;">
-                        <span style="padding: 8px 16px; background: var(--card-bg); border-radius: 20px; font-size: 0.9rem;">Amazon Sellers</span>
-                        <span style="padding: 8px 16px; background: var(--card-bg); border-radius: 20px; font-size: 0.9rem;">Shopify Stores</span>
-                        <span style="padding: 8px 16px; background: var(--card-bg); border-radius: 20px; font-size: 0.9rem;">Dropshippers</span>
-                        <span style="padding: 8px 16px; background: var(--card-bg); border-radius: 20px; font-size: 0.9rem;">Retail Chains</span>
-                        <span style="padding: 8px 16px; background: var(--card-bg); border-radius: 20px; font-size: 0.9rem;">Brand Managers</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- USE CASES -->
         <section>
             <div class="section-content">
@@ -1138,7 +947,7 @@
                     
                     <div class="use-case-card">
                         <h4><i class="fas fa-chart-bar" style="color: var(--primary);"></i> Brands & Manufacturers</h4>
-                        <p>Protect MAP pricing. Identify unauthorized sellers and price violations across marketplaces.</p>
+                        <p>Monitor pricing across marketplaces and identify unauthorized sellers.</p>
                     </div>
                     
                     <div class="use-case-card">
@@ -1197,7 +1006,7 @@
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <div>
-                        <h3>4. Make Profitable Decisions</h3>
+                        <h3>4. Make Data-Driven Decisions</h3>
                         <p>Use real-time data to adjust prices, restock at better costs, or identify new market opportunities.</p>
                     </div>
                 </div>
@@ -1223,47 +1032,38 @@
                     
                     <div class="alert-card">
                         <div class="alert-icon">
-                            <i class="fas fa-sms"></i>
-                        </div>
-                        <h4>SMS Text Messages</h4>
-                        <p>Critical price drops sent directly to your phone</p>
-                    </div>
-                    
-                    <div class="alert-card">
-                        <div class="alert-icon">
-                            <i class="fas fa-slack"></i>
-                        </div>
-                        <h4>Slack/Teams</h4>
-                        <p>Team notifications for collaborative decision making</p>
-                    </div>
-                    
-                    <div class="alert-card">
-                        <div class="alert-icon">
                             <i class="fas fa-file-export"></i>
                         </div>
                         <h4>Export Reports</h4>
                         <p>CSV and Excel exports for analysis and reporting</p>
                     </div>
+                    
+                    <div class="alert-card">
+                        <div class="alert-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Price History</h4>
+                        <p>Track price changes over time with visual charts</p>
+                    </div>
+                    
+                    <div class="alert-card">
+                        <div class="alert-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>Data Storage</h4>
+                        <p>Store historical data for trend analysis and reporting</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-
-       
+        <!-- PRICING -->
         <section id="pricing">
             <div class="section-content">
                 <h2 class="text-center">Choose Your License Tier</h2>
                 <p class="text-center mb-4" style="font-size: 1.2rem;">
-                    We've built three distinct versions to match every use case and budget. Each tier comes with complete, working source code and professional documentation.
+                    Three versions to match every use case and budget. Each tier comes with complete source code.
                 </p>
-                
-                <!-- Social Proof Badge -->
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <div style="display: inline-flex; align-items: center; background: rgba(16, 185, 129, 0.1); padding: 10px 20px; border-radius: 20px; border: 1px solid var(--success);">
-                        <i class="fas fa-medal" style="color: var(--success); margin-right: 8px;"></i>
-                        <span><strong>4.8/5</strong> customer satisfaction from 47 verified purchases</span>
-                    </div>
-                </div>
                 
                 <div class="pricing-grid">
                     <!-- Basic Tier -->
@@ -1277,14 +1077,13 @@
                             <div class="savings">Personal Use Only</div>
                             <ul class="features">
                                 <li><strong>Complete Basic Version Source Code</strong></li>
-                                <li>✅ scraper.js - Main scraping engine (300+ lines)</li>
-                                <li>✅ websites.json - Amazon/eBay/Walmart configs</li>
+                                <li>✅ scraper.js - Main scraping engine</li>
+                                <li>✅ websites.json - Platform configurations</li>
                                 <li>✅ products.json - Product monitoring template</li>
                                 <li>✅ package.json - Dependencies list</li>
-                                <li>✅ setup.bat/setup.sh - Installation scripts</li>
+                                <li>✅ setup scripts - Installation guides</li>
                                 <li>Personal use license</li>
-                           
-                                <li>Price drop alerts (console)</li>
+                                <li>Price drop alerts</li>
                                 <li>CSV & JSON export functionality</li>
                                 <li style="color: #ef4444;">❌ Commercial use</li>
                                 <li style="color: #ef4444;">❌ Client projects</li>
@@ -1307,14 +1106,13 @@
                             <div class="savings">Best Value</div>
                             <ul class="features">
                                 <li><strong>Complete Pro Version + ALL Basic Files</strong></li>
-                                <li>✅ scraper-pro.js - Enhanced scraper engine</li>
-                                <li>✅ dashboard-server.js - Web dashboard with charts</li>
-                                <li>✅ scheduler.js - Job scheduling system</li>
+                                <li>✅ Enhanced scraper engine</li>
+                                <li>✅ Web dashboard with charts</li>
+                                <li>✅ Job scheduling system</li>
                                 <li>✅ Full web UI (HTML/CSS/JS)</li>
                                 <li><strong>COMMERCIAL LICENSE</strong></li>
                                 <li>Use for client projects</li>
-                              
-                                <li>All 3 platforms + extensible architecture</li>
+                                <li>Multiple platform support</li>
                                 <li>Advanced configuration options</li>
                                 <li style="color: #ef4444;">❌ Resell source code</li>
                             </ul>
@@ -1335,14 +1133,13 @@
                             <div class="savings">Complete Solution</div>
                             <ul class="features">
                                 <li><strong>Complete Agency Version + ALL Pro & Basic Files</strong></li>
-                                <li>✅ cluster/master.js - Distributed scraping system</li>
-                                <li>✅ cluster/worker.js - Worker processes</li>
-                                <li>✅ client-manager.js - Client management system</li>
-                                <li>✅ white-label.js - White-label branding</li>
+                                <li>✅ Distributed scraping system</li>
+                                <li>✅ Worker processes</li>
+                                <li>✅ Client management system</li>
+                                <li>✅ White-label branding</li>
                                 <li>✅ Complete resale rights</li>
                                 <li><strong>WHITE-LABEL LICENSE</strong></li>
                                 <li>Resell rights included</li>
-                               
                                 <li>Remove all branding</li>
                                 <li>Sell as your own product</li>
                                 <li>Priority feature requests</li>
@@ -1356,7 +1153,7 @@
                 
                 <div style="text-align: center; margin-top: 40px; padding: 25px; background: #1f2937; border-radius: 10px;">
                     <h3>📦 Immediate Digital Delivery</h3>
-                    <p style="font-size: 1.1rem; margin: 15px 0;">After purchase, you'll receive instant access to a complete, production-ready source code package via digital download. No waiting, no shipping - start building immediately!</p>
+                    <p style="font-size: 1.1rem; margin: 15px 0;">After purchase, you'll receive instant access to complete source code via digital download.</p>
                     <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
                         <div style="background: #374151; padding: 15px 25px; border-radius: 8px; border: 2px solid #28a745;">
                             <strong>Basic:</strong> 6+ files
@@ -1372,23 +1169,46 @@
             </div>
         </section>
 
-    
+        <!-- FAQ -->
+        <section>
+            <div class="section-content">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <h4 style="margin-bottom: 0.5rem;">What platforms does PriceSpy Pro monitor?</h4>
+                        <p>PriceSpy Pro monitors Amazon, eBay, Walmart, BestBuy, Home Depot, Target, and can be extended to any e-commerce website.</p>
+                    </div>
+                    
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <h4 style="margin-bottom: 0.5rem;">How quickly do I get price change alerts?</h4>
+                        <p>The system checks prices regularly and sends alerts when significant changes are detected, typically within minutes of a price change.</p>
+                    </div>
+                    
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <h4 style="margin-bottom: 0.5rem;">Is this a subscription or one-time purchase?</h4>
+                        <p>All licenses are one-time purchases with complete source code. No recurring fees or subscriptions.</p>
+                    </div>
+                    
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+                        <h4 style="margin-bottom: 0.5rem;">Do I need technical skills to use this?</h4>
+                        <p>Basic computer skills are needed for setup. The system comes with clear installation instructions and documentation.</p>
+                    </div>
+                    
+                    <div style="background: var(--card-bg); padding: 1.5rem; border-radius: 8px;">
+                        <h4 style="margin-bottom: 0.5rem;">What support is included?</h4>
+                        <p>All purchases include email support for setup and configuration questions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- FINAL CTA -->
         <section>
             <div class="cta-section">
-                <h2 style="color: white; margin-bottom: 1rem;">Ready to Protect Your Margins?</h2>
+                <h2 style="color: white; margin-bottom: 1rem;">Ready to Start Tracking Prices?</h2>
                 <p style="font-size: 1.3rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9); max-width: 700px; margin-left: auto; margin-right: auto;">
-                    Stop losing money to competitors who change prices while you're sleeping. Start making data-driven pricing decisions today.
+                    Automate your price monitoring and stay competitive in today's market.
                 </p>
-                
-                <div style="display: inline-flex; align-items: center; background: rgba(255,255,255,0.1); padding: 1rem 2rem; border-radius: 8px; margin-bottom: 2rem;">
-                    <i class="fas fa-shield-alt" style="font-size: 1.5rem; margin-right: 1rem; color: #fbbf24;"></i>
-                    <div>
-                        <div style="font-size: 0.9rem; opacity: 0.9;">Included with Every Purchase</div>
-                        <div style="font-weight: bold; font-size: 1.2rem; color: white;">30-Day Profit Guarantee</div>
-                    </div>
-                </div>
                 
                 <div>
                     <a href="#pricing" class="btn btn-large" style="background: white; color: var(--primary); font-size: 1.3rem; padding: 18px 45px;">
@@ -1403,7 +1223,7 @@
         </section>
     </div>
 
-    <!-- ORIGINAL FOOTER - KEPT EXACTLY AS YOU HAVE IT -->
+     <!-- ORIGINAL FOOTER  -->
     <footer>
         <div class="container">
             <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
@@ -1437,11 +1257,14 @@
                 </div>
             </div>
 
-            <div class="copyright" style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
-                <p>© 2025 All rights reserved.</p>
-            </div>
+            
         </div>
     </footer>
+
+         <div class="copyright">
+                <p>© 2026 All rights reserved.</p>
+            </div>
+
 
     <!-- Statcounter Code (Keeping Your Original) -->
     <script type="text/javascript">
